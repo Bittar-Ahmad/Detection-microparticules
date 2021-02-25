@@ -282,7 +282,7 @@ def Create_A_and_b(W):
         listb.append(b[:, kk])
         
           
-   #Concatenation dans une grane matrice (c'est important pour CVX)           
+   #Concatenation dans une grande matrice (c'est important pour CVX)           
     permuted_A = np.transpose(A, (0, 2, 1))
     matrice_A = permuted_A.reshape(np.size(W_2D,0)*s3, 4+s3)
     vecteur_b = b.reshape(np.size(b,0) * np.size(b,1))
